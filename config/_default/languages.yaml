@@ -3,8 +3,8 @@
 #   Documentation: https://docs.hugoblox.com/reference/language/
 
 # Default language
-en:
-  languageCode: en-us
+#en:
+#  languageCode: en-us
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   #contentDir: content/en
 
@@ -20,3 +20,7 @@ en:
 #      - name: 传
 #        url: '#about'
 #        weight: 1
+# Languages
+zh-Hans:
+  languageCode: zh-Hans
+  title: "杜鑫宇 | Xinyu Du"
