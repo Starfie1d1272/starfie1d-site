@@ -23,7 +23,7 @@ defaultContentLanguageInSubdir: false
 ############################
 imaging:
   resampleFilter: lanczos
-  quality: 75                     # 进一步优化到 75（WebP 下 75 的画质相当于 JPG 的 90）
+  quality: 85                     
   anchor: smart
   hint: picture
   format: webp                    # 🔥 核心：强制所有处理后的图片输出为 WebP 格式

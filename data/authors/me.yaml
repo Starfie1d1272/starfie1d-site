@@ -106,4 +106,4 @@ awards:
     date: "2025-09-27"
     summary: 擅长科学可视化与星野天文摄影，个人作品曾被选作南京大学官方网站主页头图。
     icon: hero/camera  # 换成相机图标更贴切
-    url: 'https://www.nju.edu.cn' # 链接到官网或你的作品原图
+    url: '#photography'
