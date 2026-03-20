@@ -99,12 +99,11 @@ skills:
 #     level: 4
 #     label: Fluent
 
-languages: []
-
 # 荣誉奖项
 awards:
   - title: 优秀摄影师 (摄影作品登载南大官网头图)
     awarder: 南京大学校新闻中心
-    date: "2025-09-27"   # 日期你可以改成大致获奖的时间
-    summary: 擅长科学可视化与星野天文摄影，个人优秀摄影作品曾被选作南京大学官方网站主页头图展示。
-    icon: hero/trophy    # 极其酷炫的奖杯小图标
+    date: "2025-09-27"
+    summary: 擅长科学可视化与星野天文摄影，个人作品曾被选作南京大学官方网站主页头图。
+    icon: hero/camera  # 换成相机图标更贴切
+    url: 'https://www.nju.edu.cn' # 链接到官网或你的作品原图

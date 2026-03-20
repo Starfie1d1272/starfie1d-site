@@ -5,14 +5,14 @@
 
 main:
   - name: 关于我
-    url: /
+    url: '#about'      # 对应顶部简介块
     weight: 10
   - name: 科研经历
-    url: experience/
+    url: '#experience' # 对应科研时间轴
     weight: 20
-  # - name: 个人项目
-  #   url: projects/
-  #   weight: 30
-  # - name: 技术博客
-  #   url: post/
-  #   weight: 40
+  - name: 技能工具
+    url: '#skills'     # 对应你的 Python/仪器等技能条
+    weight: 30
+  - name: 荣誉与视觉 # 名字可以改得更丰富
+    url: '#photography' # 👈 指向你刚刚在 _index.md 里定义的 id: photography
+    weight: 40

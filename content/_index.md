@@ -2,7 +2,7 @@
 # Leave the homepage title empty to use the site title
 title: ''
 summary: ''
-date: 2022-10-24
+date: 2026-03-20
 type: landing
 
 design:
@@ -11,6 +11,7 @@ design:
 
 sections:
   - block: resume-biography-3
+    id: about  # 对应导航栏的 #about
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
@@ -37,6 +38,60 @@ sections:
       avatar:
         size: large # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
+
+  # ==========================================
+  # 2. 科研经历 (Experience)
+  # ==========================================
+  - block: resume-experience
+    id: experience  # 对应导航栏的 #experience
+    content:
+      title: 科研经历
+      username: me
+    design:
+      # 时间格式改为符合中文习惯或标准学术格式
+      date_format: '2026年03月'
+      # 是否先显示教育经历（我们已经在简介块显示了教育，这里选 false）
+      is_education_first: false
+
+  # ==========================================
+  # 3. 核心技能 (Skills)
+  # ==========================================
+  - block: resume-skills
+    id: skills  # 对应导航栏的 #skills
+    content:
+      title: 技能栈 & 核心工具
+      username: me
+    design:
+      # 采用两列布局，显得更紧凑
+      columns: '2'
+
+  # ==========================================
+  # 4. 荣誉奖项与摄影 (Awards)
+  # ==========================================
+  - block: resume-awards
+    id: awards  # 对应导航栏的 #awards
+    content:
+      title: 荣誉奖项与视觉作品
+      username: me
+    design:
+      columns: '2'
+
+# ==========================================
+  # 5. 摄影作品画廊 (Photography Gallery)
+  # ==========================================
+  - block: collection
+    id: photography
+    content:
+      title: 视觉作品 (Photography & Visualization)
+      subtitle: '探索行星科学的严谨与星空的浪漫'
+      filters:
+        folders:
+          - gallery  # 我们待会去创建这个文件夹
+    design:
+      # 关键：使用 gallery 视图，能像相册一样排列
+      view: card
+      columns: 2      # 设置为 2 列或 3 列显示
+  
   # - block: collection
   #   id: papers
   #   content:
