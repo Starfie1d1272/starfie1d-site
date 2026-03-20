@@ -49,7 +49,7 @@ sections:
       username: me
     design:
       # 时间格式改为符合中文习惯或标准学术格式
-      date_format: '2026年03月'
+      date_format: '2006年01月'
       # 是否先显示教育经历（我们已经在简介块显示了教育，这里选 false）
       is_education_first: false
 
