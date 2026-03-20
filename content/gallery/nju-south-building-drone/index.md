@@ -7,3 +7,5 @@ image:
   caption: '南楼上空的轨迹'
 ---
 将无人机的飞行轨迹与恒星的视运动结合，利用科技手段为传统的南楼增加一份科幻质感。
+
+{{< figure src="featured.jpg" lightbox="true" >}}

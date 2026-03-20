@@ -7,3 +7,5 @@ image:
   caption: '拍摄于南京大学仙林校区左台'
 ---
 以天文台圆顶为前景，长曝光记录下星辰围绕天北极运行的轨迹，这是属于天文学者的浪漫。
+
+{{< figure src="featured.jpg" lightbox="true" >}}

@@ -7,3 +7,5 @@ image:
   caption: '月全食相位组合'
 ---
 在月全食过程中，捕捉月球亮度与色调的细微变化。随着地球大气折射红光，月面呈现出迷人的古铜色。
+
+{{< figure src="featured.jpg" lightbox="true" >}}

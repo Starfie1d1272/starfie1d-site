@@ -22,3 +22,5 @@ show_breadcrumb: false # 隐藏面包屑导航
 # 针对那个 "0" (通常是阅读时间或评论占位符)
 reading_time: false
 ---
+
+{{< figure src="featured.jpg" lightbox="true" >}}

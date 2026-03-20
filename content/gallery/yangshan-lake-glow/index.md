@@ -7,3 +7,5 @@ image:
   caption: '羊山湖畔晚霞'
 ---
 捕捉大气散射产生的极致色彩，湖面的倒影与天际的流云构成完美的对称。
+
+{{< figure src="featured.jpg" lightbox="true" >}}

@@ -7,3 +7,5 @@ image:
   caption: '罕见的彗星影像'
 ---
 这颗彗星在拍摄时已极为暗淡，通过长曝光和后期处理，才让其彗核与淡淡的彗尾显露真容。
+
+{{< figure src="featured.jpg" lightbox="true" >}}

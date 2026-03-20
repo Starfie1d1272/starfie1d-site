@@ -7,3 +7,5 @@ image:
   caption: '处女作：千岛湖星轨'
 ---
 这是我第一次尝试星轨摄影，虽然技术尚显稚嫩，但在低光害环境下看到的震撼星空，开启了我对星空的无限向往。
+
+{{< figure src="featured.jpg" lightbox="true" >}}

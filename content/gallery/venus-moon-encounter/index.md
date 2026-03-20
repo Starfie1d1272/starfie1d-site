@@ -7,3 +7,5 @@ image:
   caption: '金星与月亮的会合'
 ---
 作为内行星的金星，在蓝调时分与蛾眉月形成绝佳的构图，展现天体力学的几何美感。
+
+{{< figure src="featured.jpg" lightbox="true" >}}
