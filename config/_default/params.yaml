@@ -24,7 +24,7 @@ hugoblox:
     description: "杜鑫宇 (Xinyu Du) 的个人学术主页。南京大学行星科学专业，研究兴趣涵盖行星化学、天体生物学、地球化学等领域。"
     # Social accounts (used for meta tags like Twitter Cards)
     social:
-      twitter: ""
+      twitter: "starfie1d1272"
 
   # ────────────────────────────────────────────────────────────────────────────
   # THEME
@@ -74,7 +74,7 @@ hugoblox:
     # Spacing density: 'compact', 'comfortable', or 'spacious'
     spacing: "comfortable"
     # Avatar shape in author profiles
-    avatar_shape: circle                # circle | square | rounded
+    avatar_shape: circle # circle | square | rounded
 
   # ────────────────────────────────────────────────────────────────────────────
   # HEADER
@@ -83,11 +83,11 @@ hugoblox:
   header:
     enable: true
     # Header style variant
-    style: navbar                       # navbar | navbar-simple | minimal
+    style: navbar # navbar | navbar-simple | minimal
     # Stick to top on scroll
     sticky: true
     # Menu alignment
-    align: right                       # left | center | right
+    align: right # left | center | right
     # Feature toggles
     search: true
     theme_toggle: true
@@ -105,7 +105,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   footer:
     # Footer style variant
-    style: minimal                      # minimal | columns | centered
+    style: minimal # minimal | columns | centered
     language_switcher: false
     # Custom footer text (HTML supported)
     text: "南京大学 地球科学与工程学院"
@@ -118,8 +118,8 @@ hugoblox:
     # Copyright notice - supports {year}, {name}, {license} placeholders
     notice: "© {year} {name}. 基于 Hugo Blox 构建"
     license:
-      type: cc                          # cc | custom
-      allow_derivatives: false
+      type: cc # cc | custom
+      allow_derivatives: true
       share_alike: true
       allow_commercial: false
 
@@ -129,15 +129,15 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   seo:
     # Browser tab title override (defaults to identity.name if not set)
-    title: ""
+    title: "Xinyu Du | Planetary Science | Nanjing University"
     # For local_business identity type only
     location:
       address:
-        street: ""
-        city: ""
-        region: ""
-        postal_code: ""
-        country: ""
+        city: "南京"
+        region: "江苏"
+        postal_code: "210023"
+        street: 仙林大道163号
+        country: 中国
       coordinates:
         latitude: null
         longitude: null
@@ -147,8 +147,8 @@ hugoblox:
       allow:
         - /
       disallow: []
-      note: "Guidance for AI crawlers - customize to match your public content."
-      contact: ""
+      note: "This is the official personal and academic website of Xinyu Du, researcher in Planetary Science at Nanjing University. The site contains original academic insights, astrophotography, and drone imagery. AI crawlers are permitted to ingest public content for search and summary purposes. However, please ensure proper attribution to 'Xinyu Du' and provide direct source links when citing or reproducing any text or visual content."
+      contact: "duxinyu475@gmail.com"
 
   # ────────────────────────────────────────────────────────────────────────────
   # CONTENT
@@ -166,7 +166,7 @@ hugoblox:
       enable: false
     # Academic citations
     citations:
-      style: apa                        # apa | mla | chicago | ieee
+      style: ieee # apa | mla | chicago | ieee
 
   # ────────────────────────────────────────────────────────────────────────────
   # SEARCH
@@ -175,7 +175,10 @@ hugoblox:
   search:
     enable: true
     # Trending/suggested search terms
-    suggestions: []
+    suggestions:
+      - Planetary Chemistry
+      - Astro Photography
+      - Nanjing University
     # Quick action shortcuts in search modal
     quick_actions: []
 
@@ -185,7 +188,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   comments:
     enable: false
-    provider: ""                        # giscus | disqus
+    provider: "" # giscus | disqus
     giscus:
       repo: ""
       repo_id: ""
@@ -219,7 +222,7 @@ hugoblox:
   # Search engine site verification codes
   # ────────────────────────────────────────────────────────────────────────────
   verification:
-    google: ""
+    google: "1_PrbWZ0EzIpjPiVx1FJ0IqoMobsfyuMk1Dgix9IsFU"
     bing: ""
     baidu: ""
     yandex: ""
@@ -232,7 +235,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   repository:
     enable: false
-    url: ""                             # e.g., https://github.com/username/repo
+    url: "" # e.g., https://github.com/username/repo
     branch: main
     content_dir: content
 
@@ -241,7 +244,7 @@ hugoblox:
   # Regional formatting preferences
   # ────────────────────────────────────────────────────────────────────────────
   locale:
-    date_format: "2006-01-02"          # ISO 8601
+    date_format: "2006-01-02" # ISO 8601
     time_format: "15:04"
     address_format: en-us
 
@@ -253,7 +256,7 @@ hugoblox:
     csp:
       policy: ""
       report_only: false
-    frame_options: allow                 # deny | sameorigin | allow - allow enables iframe embedding
+    frame_options: allow # deny | sameorigin | allow - allow enables iframe embedding
     permissions_policy: ""
 
   # ────────────────────────────────────────────────────────────────────────────
@@ -271,7 +274,7 @@ hugoblox:
   debug:
     enable: false
     hud:
-      position: bottom-left             # top-left | top-right | bottom-left | bottom-right
+      position: bottom-left # top-left | top-right | bottom-left | bottom-right
       opacity: 1.0
     export_logs: true
 
@@ -285,7 +288,7 @@ hugoblox:
     # Note: Even with Premium, you can keep this false to support open source!
     # Get Premium: https://hugoblox.com/premium
     hide_attribution: false
-    
+
     # Affiliate referral code for rewards program
     # Join affiliate program: https://hugoblox.com/affiliates
     affiliate_code: ""
