@@ -10,9 +10,9 @@ main:
   - name: 科研经历
     url: experience/
     weight: 20
-  - name: 个人项目
-    url: projects/
-    weight: 30
-  - name: 技术博客
-    url: post/
-    weight: 40
+  # - name: 个人项目
+  #   url: projects/
+  #   weight: 30
+  # - name: 技术博客
+  #   url: post/
+  #   weight: 40

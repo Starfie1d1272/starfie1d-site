@@ -2,115 +2,109 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: Dr. Alex Johnson
-  given: Alex
-  family: Johnson
-  alternate: ''  # Example: 王伟
-  pronunciation: ''  # Example: Wáng Wěi
-  pronouns: he/him
-postnominals:
-  - PhD
-  - MIEEE
+  display: 杜鑫宇
+  given: Xinyu
+  family: Du
+  alternate: ''
+  pronunciation: ''
+  pronouns: ''
 status:
-  icon: "☕️"
-role: Senior AI Research Scientist
+  icon: "🌌"
+role: 行星化学在读本科生
 bio: |
-  Alex Johnson is a Senior AI Research Scientist at Meta AI. His research
-  has been published in top conferences like NeurIPS and ICML, with over
-  10,000 citations. Alex is passionate about pushing the boundaries of AI
-  while ensuring ethical development.
+  我是南京大学行星科学（化学）专业的在读本科生。我的研究兴趣横跨**行星化学、天体生物学、地球化学与天文观测**。
+  
+  我熟练使用 Python (ObsPy/Jupyter)、C/C++ 进行数据计算，并掌握 GC-MS、LA-ICP-MS 等高精度地球化学仪器的实操。
 
 affiliations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+  - name: 南京大学
+    url: https://www.nju.edu.cn/
 
 links:
-  - icon: at-symbol
-    url: mailto:alex.johnson@example.com
+  - icon: envelope
+    url: mailto:231830104@smail.nju.edu.cn
     label: E-mail Me
-  - icon: brands/x
-    url: https://x.com/example
   - icon: brands/github
-    url: https://github.com/example
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/example/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=example
-  - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+    url: https://github.com/Starfie1d1272
 
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - 行星化学与天体生物学
+  - 固体地球化学与同位素定年
+  - 早期类地行星演化
+  - 星野天文摄影
 
 education:
-  - degree: PhD Computer Science
-    institution: Stanford University
-    start: 2015-09-01
-    end: 2019-06-30
-    summary: |
-      Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
-    button:
-      text: Download dissertation
-      url: /resume.pdf
-      icon: hero/arrow-down-tray
-  - degree: MS Computer Science
-    institution: Carnegie Mellon University
-    start: 2013-09-01
-    end: 2015-05-31
-  - degree: BS Computer Science
-    institution: MIT
-    start: 2009-09-01
-    end: 2013-05-31
+  - degree: 行星科学（化学）学士
+    institution: 南京大学
+    start: 2023-09-01
+    end: 2027-06-30
+  - degree: 天体生物学 (访问学生)
+    institution: 中国科学技术大学
+    start: 2025-11-01
+    end: 2026-03-31
 
+# 你硬核的科研经历（直接显示在经验时间轴上）
 experience:
-  - role: Senior AI Research Scientist
-    org: Meta AI
-    start: 2020-01-01
+  - role: 访问学生 | 导师：郝记华教授
+    org: 中国科学技术大学 · 天体生物学实验室
+    start: 2025-11-01
+    end: 2026-03-31
     summary: |
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
-    button:
-      text: View portfolio
-      url: /
-      icon: hero/arrow-down-tray
-  - role: AI Research Intern
-    org: OpenAI
-    start: 2019-06-01
-    end: 2019-12-31
+      - **动力学实验搭建**: 搭建常温液相反应系统实现高精度时间梯度采样。
+      - **仪器操作与图谱**: 操作 GC-MS 并掌握其分离检测原理，负责实验测试数据汇总。
+  - role: 项目成员 | 导师：陈天宇教授
+    org: 南京大学 · 地球科学与工程学院
+    start: 2024-09-01
+    end: 2025-12-31
     summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+      - **野外采样与前处理**: 剑川盆地野外勘察，完成固体地球化学全套制样流程。
+      - **微区分析与同位素测试**: 使用 LA-ICP-MS 进行靶样元素面扫。
+  - role: 轮转学习 | 导师：刘慧根副教授
+    org: 南京大学 · 天文与空间科学学院
+    start: 2024-10-01
+    end: 2025-11-30
+    summary: |
+      - **实地观测**: 参与新型日间观星探测器 (VPS) 实测验证项目与外场光学测试。
 
 skills:
-  - name: Technical Skills
+  - name: 核心科研技能
     items:
-      - label: Python
-        level: 5
-      - label: Machine Learning
-        level: 5
-      - label: Cloud Computing
+      - label: Python (ObsPy/Jupyter)
         level: 4
-  - name: Research & Communication
+      - label: C/C++
+        level: 3
+      - label: LaTeX & Markdown
+        level: 4
+  - name: 仪器操作与勘测
     items:
-      - label: Academic Writing
+      - label: LA-ICP-MS & GC-MS
+        level: 3
+      - label: 无人机航拍与野外勘测
         level: 5
-      - label: Conference Presentations
-        level: 4
-      - label: Grant Proposals
-        level: 4
 
-languages:
-  - name: English
-    level: 5
-    label: Native
-  - name: Spanish
-    level: 4
-    label: Fluent
+# 语言能力
+# languages:
+#   - name: 中文
+#     level: 5
+#     label: Native (母语)
+#   - name: English
+#     level: 3
+#     label: CET-4 / CET-6 (熟练阅读英文文献)
 
+# languages:
+#   - name: English
+#     level: 5
+#     label: Native
+#   - name: Spanish
+#     level: 4
+#     label: Fluent
+
+languages: []
+
+# 荣誉奖项
 awards:
-  - title: Best Paper Award
-    awarder: NeurIPS
-    date: "2022-12-01"
-    summary: Awarded for groundbreaking work on efficient training of large models.
-    icon: hero/trophy
+  - title: 优秀摄影师 (摄影作品登载南大官网头图)
+    awarder: 南京大学校新闻中心
+    date: "2025-09-27"   # 日期你可以改成大致获奖的时间
+    summary: 擅长科学可视化与星野天文摄影，个人优秀摄影作品曾被选作南京大学官方网站主页头图展示。
+    icon: hero/trophy    # 极其酷炫的奖杯小图标
