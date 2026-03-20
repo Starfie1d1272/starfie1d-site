@@ -9,34 +9,40 @@ title: '杜鑫宇 | Xinyu Du'
 baseURL: 'https://starfie1d.top/'
 
 ############################
-## LANGUAGE
+## 1. 语言与 CJK 深度优化
 ############################
 
-defaultContentLanguage: zh-Hans   # 设置默认语言为简体中文
-hasCJKLanguage: true              # 开启中日韩文字字数统计和搜索优化
+defaultContentLanguage: zh-Hans
+hasCJKLanguage: true              # 开启中日韩语支持
+summaryLength: 70                 # 中文摘要建议从 30 增加到 70（中文分词比英文短）
+removePathAccents: true           # 移除路径中的重音符号
 defaultContentLanguageInSubdir: false
-removePathAccents: true
 
 ############################
-## PAGE OPTIONS
+## 2. 图像处理 (针对 2.5s LCP 的降维打击)
 ############################
+imaging:
+  resampleFilter: lanczos
+  quality: 75                     # 进一步优化到 75（WebP 下 75 的画质相当于 JPG 的 90）
+  anchor: smart
+  hint: picture
+  format: webp                    # 🔥 核心：强制所有处理后的图片输出为 WebP 格式
+  exif:
+    disable: true                 # 移除图片位置/拍摄器材信息（保护隐私并减小体积）
 
-cascade:
-  - _target:
-      path: /slides/**
-      kind: page
-    outputs: [HTML, present]
-
 ############################
-## ADVANCED
+## 3. 构建与性能优化 (Minify)
 ############################
+minify:
+  disableXML: false
+  minifyOutput: true              # 强制开启 HTML 压缩
+  tdewebp: true                   # 针对 WebP 进一步优化
 
 build:
   writeStats: true
+  useResourceCache: true          # 开启资源缓存（加速 Vercel 再次构建的速度）
+
 enableGitInfo: false
-summaryLength: 30
-pagination:
-  pagerSize: 10
 enableEmoji: true
 enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
@@ -45,20 +51,49 @@ disableAliases: true
 outputs:
   home: [HTML, RSS, headers, redirects, backlinks]
   section: [HTML, RSS]
-imaging:
-  resampleFilter: lanczos
-  quality: 90
-  anchor: smart
-  hint: picture
-timeout: 600000
+
+# 禁用冗余元数据
+disableHugoGeneratorInject: true  # 移除 HTML 源代码里的 "Hugo 0.158" 标记
+
+############################
+## 4. 渲染与安全 (Markup)
+############################
+markup:
+  _merge: deep
+  goldmark:
+    renderer:
+      unsafe: true                # 允许在 Markdown 里写 HTML（方便以后做复杂的行星化学图表）
+    parser:
+      attribute:
+        block: true
+        title: true
+  highlight:
+    lineNos: false
+    theme: dracula                # 代码高亮主题，极客风
+
+############################
+## 5. 高级路径与分类
+############################
 taxonomies:
   author: authors
   tag: tags
   publication_type: publication_types
-markup:
-  _merge: deep
-  highlight:
-    lineNos: false
+
+outputs:
+  home: [HTML, RSS, headers, redirects, backlinks]
+  section: [HTML, RSS]
+
+# 针对 slides 和项目的特殊输出设置
+cascade:
+  - _target:
+      path: /slides/**
+      kind: page
+    outputs: [HTML, present]
+
+############################
+## 6. 其他设置
+############################
+timeout: 600000
 security:
   _merge: deep
 sitemap:

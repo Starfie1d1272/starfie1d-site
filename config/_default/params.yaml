@@ -17,14 +17,14 @@ hugoblox:
     # Legal entity for copyright notices (defaults to name if not set)
     organization: "Nanjing University"
     # Schema.org type for structured data
-    type: person             # person | organization | local_business
+    type: person
     # Short tagline displayed on your site
-    tagline: "南京大学行星科学在读本科生"
+    tagline: "Planetary Science @ NJU | 行星化学与天体生物学"
     # Site meta description for search engines and social sharing
-    description: "杜鑫宇的个人学术主页。专注行星化学、地球科学与天体生物学研究。"
+    description: "杜鑫宇 (Xinyu Du) 的个人学术主页。南京大学行星科学专业，研究兴趣涵盖行星化学、天体生物学、地球化学等领域。"
     # Social accounts (used for meta tags like Twitter Cards)
     social:
-      twitter: "MakeOwnable"              # Twitter/X handle for Twitter Cards (without @)
+      twitter: ""
 
   # ────────────────────────────────────────────────────────────────────────────
   # THEME
@@ -37,9 +37,9 @@ hugoblox:
     pack: "default"
     # Optional: Override theme pack colors
     colors:
-      primary: ""                       # Tailwind palette name or hex (e.g., "indigo" or "#6366f1")
+      primary: "indigo"
       secondary: ""
-      neutral: ""                       # Affects gray utilities (text-gray-*, bg-gray-*)
+      neutral: "slate"
     # Optional: Mode-specific color overrides
     colors_light: {}
     colors_dark: {}
@@ -60,7 +60,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   typography:
     # Font: 'sans' (Inter), 'serif' (Roboto Slab), or 'native' (system fonts)
-    font: "sans"
+    font: "native"
     # Size: 'sm', 'md', 'lg', or 'xl' (affects base font size and scale)
     size: "md"
 
@@ -70,7 +70,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   layout:
     # Border radius: 'none', 'sm', 'md', 'lg', or 'full'
-    radius: "md"
+    radius: "lg"
     # Spacing density: 'compact', 'comfortable', or 'spacious'
     spacing: "comfortable"
     # Avatar shape in author profiles
@@ -87,12 +87,12 @@ hugoblox:
     # Stick to top on scroll
     sticky: true
     # Menu alignment
-    align: center                       # left | center | right
+    align: right                       # left | center | right
     # Feature toggles
     search: true
     theme_toggle: true
-    theme_picker: true
-    language_switcher: true
+    theme_picker: false
+    language_switcher: false
     # Call-to-action button
     cta:
       enable: false
@@ -106,9 +106,9 @@ hugoblox:
   footer:
     # Footer style variant
     style: minimal                      # minimal | columns | centered
-    language_switcher: true
+    language_switcher: false
     # Custom footer text (HTML supported)
-    text: ""
+    text: "南京大学 地球科学与工程学院"
 
   # ────────────────────────────────────────────────────────────────────────────
   # COPYRIGHT
@@ -116,7 +116,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   copyright:
     # Copyright notice - supports {year}, {name}, {license} placeholders
-    notice: "© {year} {name}. This work is licensed under {license}"
+    notice: "© {year} {name}. 基于 Hugo Blox 构建"
     license:
       type: cc                          # cc | custom
       allow_derivatives: false
@@ -163,7 +163,7 @@ hugoblox:
       enable: true
     # Reading time estimates
     reading_time:
-      enable: true
+      enable: false
     # Academic citations
     citations:
       style: apa                        # apa | mla | chicago | ieee
@@ -200,9 +200,9 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   analytics:
     google:
-      measurement_id: ""                # Google Analytics 4: G-XXXXXXXXXX
+      measurement_id: ""
     google_tag_manager:
-      container_id: ""                  # GTM-XXXXXXX
+      container_id: ""
     plausible:
       domain: ""
     fathom:
@@ -241,9 +241,9 @@ hugoblox:
   # Regional formatting preferences
   # ────────────────────────────────────────────────────────────────────────────
   locale:
-    date_format: "Jan 2, 2006"          # Go time format
-    time_format: "3:04 PM"
-    address_format: en-us
+    date_format: "2006-01-02"          # ISO 8601
+    time_format: "15:04"
+    address_format: zh-cn
 
   # ────────────────────────────────────────────────────────────────────────────
   # SECURITY
