@@ -4,16 +4,16 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Website name (set in params.yaml under hugoblox.branding.name)
-title: ''
+title: '杜鑫宇 | Xinyu Du'
 # Website URL
-baseURL: 'https://example.com/'
+baseURL: 'https://starfie1d.top/'
 
 ############################
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: en
-hasCJKLanguage: false
+defaultContentLanguage: zh-Hans   # 设置默认语言为简体中文
+hasCJKLanguage: true              # 开启中日韩文字字数统计和搜索优化
 defaultContentLanguageInSubdir: false
 removePathAccents: true
 
