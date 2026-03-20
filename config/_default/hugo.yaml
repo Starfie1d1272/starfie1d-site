@@ -79,10 +79,6 @@ taxonomies:
   tag: tags
   publication_type: publication_types
 
-outputs:
-  home: [HTML, RSS, headers, redirects, backlinks]
-  section: [HTML, RSS]
-
 # 针对 slides 和项目的特殊输出设置
 cascade:
   - _target:
@@ -97,4 +93,14 @@ timeout: 600000
 security:
   _merge: deep
 sitemap:
+  changefreq: weekly
+  priority: 0.5
+  filename: sitemap.xml
   _merge: deep
+
+# 如果不需要标签/分类页，可以减重：taxonomy 和 taxonomyTerm 会被禁用
+# disableKinds: ["taxonomy", "taxonomyTerm"]
+
+# 分页预设
+pagination:
+  pagerSize: 10
