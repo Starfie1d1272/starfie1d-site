@@ -10,9 +10,10 @@ links:
 
 image:
   caption: 'DJI Mini 4 Pro | 24mm f/1.7 2s ISO200'
+  preview_only: true
 ---
 这是我摄影生涯中极具纪念意义的一刻。作品成功入选 **南京大学官网首页**。
 
 画面利用 2s 的长曝光，捕捉了仙林校区入夜后灯火初上的璀璨，与深蓝色调的天空形成鲜明的冷暖对比。这不仅是一张航拍图，更是对校园生活“只争朝夕”状态的视觉诠释。
 
-![南大官网主页头图](featured.jpg)
+{{< figure src="featured.jpg" title="心有所向，只争朝夕" caption="DJI Mini 4 Pro | 24mm f/1.7 2s ISO200" lightbox="true" >}}
