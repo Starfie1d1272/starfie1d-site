@@ -129,7 +129,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   seo:
     # Browser tab title override (defaults to identity.name if not set)
-    title: "Xinyu Du | Planetary Science | Nanjing University"
+    title: "Xinyu Du | Starfie1d | Planetary Science | Nanjing University"
     # For local_business identity type only
     location:
       address:
