@@ -10,4 +10,4 @@ image:
 
 这种迷人的古铜色（Blood Moon），本质上是地球大气对阳光进行瑞利散射（Rayleigh Scattering）的副产物，展现了地月系统微妙的光影联系。
 
-![月全食相位组合](featured.jpg)
+{{< photo >}}
