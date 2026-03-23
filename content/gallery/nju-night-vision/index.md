@@ -19,4 +19,9 @@ image:
 
 这是我摄影生涯中极具纪念意义的一刻...
 
-{{< gallery album="." >}}
+<div style="text-align: center;">
+  <a href="featured.jpg" class="hb-lightbox">
+    <img src="featured.jpg" alt="点击查看原图" style="border-radius: 8px; cursor: zoom-in; max-width: 100%;">
+  </a>
+  <p style="font-size: 0.8em; color: gray;">DJI Mini 4 Pro | 24mm f/1.7 2s ISO200 (点击图片放大)</p>
+</div>
