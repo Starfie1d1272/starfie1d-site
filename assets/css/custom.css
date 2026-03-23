@@ -1,4 +1,0 @@
-/* 只要是视觉作品（gallery）类型的页面，都隐藏掉主题自带的顶部大图 */
-.type-gallery .article-header {
-    display: none !important;
-}

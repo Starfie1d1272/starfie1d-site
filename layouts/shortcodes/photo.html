@@ -1,3 +1,10 @@
+<style>
+  /* 强行隐藏 Hugo Blox 自动生成的特色图片容器 */
+  .featured-image-wrapper.article-header {
+    display: none !important;
+  }
+</style>
+
 {{/* 这是一个自动生成带灯箱图片的短代码 */}}
 {{ $image := .Page.Resources.GetMatch "featured*" }}
 {{ if $image }}
