@@ -1,0 +1,17 @@
+{{/* 这是一个自动生成带灯箱图片的短代码 */}}
+{{ $image := .Page.Resources.GetMatch "featured*" }}
+{{ if $image }}
+<div class="flex justify-center mt-8">
+  <div class="w-full max-w-4xl">
+    <a href="{{ $image.RelPermalink }}" class="hb-lightbox">
+      <img src="{{ $image.RelPermalink }}" 
+           alt="{{ .Get "title" | default .Page.Title }}" 
+           style="border-radius: 0.75rem; cursor: zoom-in; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);"
+           loading="lazy">
+    </a>
+    {{ with .Page.Params.image.caption }}
+    <p class="text-center text-sm text-gray-500 mt-3 font-mono italic">{{ . }}</p>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

@@ -31,4 +31,5 @@ cascade:
   image:
     preview_only: true    # 封杀自带的傻瓜头图，把你正文里手写的全屏 Lightbox 图作为唯一展示
     focal_point: 'Smart'  # 让 AI 自动识别所有照片的高光、人脸、星轨中心，裁出最完美的封面卡片
+  type: gallery
 ---

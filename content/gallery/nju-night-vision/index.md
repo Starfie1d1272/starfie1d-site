@@ -2,7 +2,6 @@
 title: "心有所向，只争朝夕"
 summary: "入选南京大学官方网站主页头图。在光影交织中，记录校园的蔚蓝与璀璨。"
 date: 2025-09-27
-type: gallery
 
 # 核心：关联到官网地址，保持专业度
 links:
@@ -19,9 +18,4 @@ image:
 
 这是我摄影生涯中极具纪念意义的一刻...
 
-<div style="text-align: center;">
-  <a href="featured.jpg" class="hb-lightbox">
-    <img src="featured.jpg" alt="点击查看原图" style="border-radius: 8px; cursor: zoom-in; max-width: 100%;">
-  </a>
-  <p style="font-size: 0.8em; color: gray;">DJI Mini 4 Pro | 24mm f/1.7 2s ISO200 (点击图片放大)</p>
-</div>
+{{< photo >}}
