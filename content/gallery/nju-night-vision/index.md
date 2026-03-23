@@ -2,6 +2,7 @@
 title: "心有所向，只争朝夕"
 summary: "入选南京大学官方网站主页头图。在光影交织中，记录校园的蔚蓝与璀璨。"
 date: 2025-09-27
+type: gallery
 
 # 核心：关联到官网地址，保持专业度
 links:
@@ -16,4 +17,6 @@ image:
 
 画面利用 2s 的长曝光，捕捉了仙林校区入夜后灯火初上的璀璨，与深蓝色调的天空形成鲜明的冷暖对比。这不仅是一张航拍图，更是对校园生活“只争朝夕”状态的视觉诠释。
 
-{{< figure src="featured.jpg" title="心有所向，只争朝夕" caption="DJI Mini 4 Pro | 24mm f/1.7 2s ISO200" lightbox="true" >}}
+这是我摄影生涯中极具纪念意义的一刻...
+
+{{< gallery album="." >}}
