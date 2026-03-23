@@ -188,24 +188,24 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   comments:
     enable: false
-    provider: "" # giscus | disqus
-    giscus:
-      repo: ""
-      repo_id: ""
-      category: ""
-      category_id: ""
-    disqus:
-      shortname: ""
+    # provider: "" # giscus | disqus
+    # giscus:
+    #   repo: ""
+    #   repo_id: ""
+    #   category: ""
+    #   category_id: ""
+    # disqus:
+    #   shortname: ""
 
   # ────────────────────────────────────────────────────────────────────────────
   # ANALYTICS
   # Traffic and behavior analytics
   # ────────────────────────────────────────────────────────────────────────────
   analytics:
-    google:
-      measurement_id: ""
-    google_tag_manager:
-      container_id: ""
+    # google:
+    #   measurement_id: ""
+    # google_tag_manager:
+    #   container_id: ""
     plausible:
       domain: ""
     fathom:

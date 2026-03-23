@@ -19,7 +19,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: 📄 下载完整简历 (PDF)
-        url: uploads/CV_DuXinyu.pdf
+        url: uploads/Public_CV.pdf
       headings:
         about: '关于我'
         education: '教育背景'
