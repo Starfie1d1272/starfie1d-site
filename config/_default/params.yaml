@@ -1,294 +1,143 @@
 # ══════════════════════════════════════════════════════════════════════════════
-# HUGO BLOX CONFIGURATION
-# Schema: hugoblox.com/schema/v2
-# Tutorial: https://docs.hugoblox.com/tutorial/
-# Documentation: https://docs.hugoblox.com/
+# HUGO BLOX 核心配置
+# 架构版本: 2.0
+# 官方文档: https://docs.hugoblox.com/
 # ══════════════════════════════════════════════════════════════════════════════
 hugoblox:
   schema: "2.0"
 
   # ────────────────────────────────────────────────────────────────────────────
-  # IDENTITY
-  # Site-level branding (for people/profiles, use the author system in content/authors/)
+  # 身份标识 (IDENTITY)
   # ────────────────────────────────────────────────────────────────────────────
   identity:
-    # Site name - shown in navbar, footer, copyright, and browser title by default
-    name: "杜鑫宇 | Xinyu Du"
-    # Legal entity for copyright notices (defaults to name if not set)
+    # 网站名称 - 默认显示在导航栏、页脚和浏览器标题
+    name: "Xinyu Du"
+    # 所属机构
     organization: "Nanjing University"
-    # Schema.org type for structured data
+    # Schema.org 类型 (保持为 person)
     type: person
-    # Short tagline displayed on your site
-    tagline: "Planetary Science @ NJU | 行星化学与天体生物学"
-    # Site meta description for search engines and social sharing
-    description: "杜鑫宇 (Xinyu Du) 的个人学术主页。南京大学行星科学专业，研究兴趣涵盖行星化学、天体生物学、地球化学等领域。"
-    # Social accounts (used for meta tags like Twitter Cards)
+    # 英文标语
+    tagline: "Planetary Science @ NJU | Planetary Chemistry & Astrobiology"
+    # 英文 SEO 描述
+    description: "Academic homepage of Xinyu Du at Nanjing University. Research interests: Planetary Science, Geochemistry, and Astrobiology."
     social:
       twitter: "starfie1d1272"
 
   # ────────────────────────────────────────────────────────────────────────────
-  # THEME
-  # Color and visual design system
+  # 视觉主题 (THEME)
   # ────────────────────────────────────────────────────────────────────────────
   theme:
-    # Mode: 'light', 'dark', or 'system' (follows OS preference)
+    # 模式选择: 'light' (浅色), 'dark' (深色), 或 'system' (随系统)
     mode: system
-    # Theme pack: name from data/themes/ or { light: "x", dark: "y" } for mix-and-match
+    # 主题包名: 见 data/themes/ 目录
     pack: "default"
-    # Optional: Override theme pack colors
+    # 颜色配置: 可选 "indigo", "slate", "blue", "green" 等
     colors:
       primary: "indigo"
       secondary: ""
       neutral: "slate"
-    # Optional: Mode-specific color overrides
-    colors_light: {}
-    colors_dark: {}
-    # Optional: Semantic surface color overrides
-    surfaces:
-      background: ""
-      foreground: ""
-      header:
-        background: ""
-        foreground: ""
-      footer:
-        background: ""
-        foreground: ""
 
   # ────────────────────────────────────────────────────────────────────────────
-  # TYPOGRAPHY
-  # Font and text sizing
+  # 字体排版 (TYPOGRAPHY)
   # ────────────────────────────────────────────────────────────────────────────
   typography:
-    # Font: 'sans' (Inter), 'serif' (Roboto Slab), or 'native' (system fonts)
+    # 字体选择: 'sans' (Inter), 'serif' (Roboto Slab), 或 'native' (系统默认字体)
     font: "native"
-    # Size: 'sm', 'md', 'lg', or 'xl' (affects base font size and scale)
+    # 字号大小: 'sm', 'md', 'lg', 或 'xl'
     size: "md"
 
   # ────────────────────────────────────────────────────────────────────────────
-  # LAYOUT
-  # Spacing and shape tokens
+  # 布局方案 (LAYOUT)
   # ────────────────────────────────────────────────────────────────────────────
   layout:
-    # Border radius: 'none', 'sm', 'md', 'lg', or 'full'
+    # 圆角弧度: 'none', 'sm', 'md', 'lg', 或 'full'
     radius: "lg"
-    # Spacing density: 'compact', 'comfortable', or 'spacious'
+    # 间距密度: 'compact' (紧凑), 'comfortable' (舒适), 或 'spacious' (宽松)
     spacing: "comfortable"
-    # Avatar shape in author profiles
-    avatar_shape: circle # circle | square | rounded
+    # 头像形状: circle (圆) | square (方) | rounded (圆角方)
+    avatar_shape: circle
 
   # ────────────────────────────────────────────────────────────────────────────
-  # HEADER
-  # Site header and navigation bar
+  # 导航栏 (HEADER)
   # ────────────────────────────────────────────────────────────────────────────
   header:
     enable: true
-    # Header style variant
-    style: navbar # navbar | navbar-simple | minimal
-    # Stick to top on scroll
+    # 样式: navbar (标准), navbar-simple (简洁), minimal (极简)
+    style: navbar
     sticky: true
-    # Menu alignment
-    align: right # left | center | right
-    # Feature toggles
+    # 对齐方式: left, center, right
+    align: right
     search: true
     theme_toggle: true
-    theme_picker: false
-    language_switcher: false
-    # Call-to-action button
-    cta:
-      enable: false
-      text: ""
-      url: ""
+    # 【修改】开启语言切换器
+    language_switcher: true
 
   # ────────────────────────────────────────────────────────────────────────────
-  # FOOTER
-  # Site footer
+  # 页脚 (FOOTER)
   # ────────────────────────────────────────────────────────────────────────────
   footer:
-    # Footer style variant
-    style: minimal # minimal | columns | centered
-    language_switcher: false
-    # Custom footer text (HTML supported)
-    text: "南京大学 地球科学与工程学院"
+    style: minimal
+    # 【修改】开启页脚语言切换
+    language_switcher: true
+    # 英文页脚文本
+    text: "School of Earth Sciences and Engineering, Nanjing University"
 
   # ────────────────────────────────────────────────────────────────────────────
-  # COPYRIGHT
-  # Legal notices and licensing
+  # 版权信息 (COPYRIGHT)
   # ────────────────────────────────────────────────────────────────────────────
   copyright:
-    # Copyright notice - supports {year}, {name}, {license} placeholders
-    notice: "© {year} {name}. 基于 Hugo Blox 构建"
+    notice: "© {year} {name}. Powered by Hugo Blox."
     license:
-      type: cc # cc | custom
+      type: cc # cc (知识共享) | custom (自定义)
       allow_derivatives: true
       share_alike: true
       allow_commercial: false
 
   # ────────────────────────────────────────────────────────────────────────────
-  # SEO
-  # Search engine optimization - overrides and technical settings
+  # SEO 与 AI 配置
   # ────────────────────────────────────────────────────────────────────────────
   seo:
-    # Browser tab title override (defaults to identity.name if not set)
-    title: "Xinyu Du | Starfie1d | Planetary Science | Nanjing University"
-    # For local_business identity type only
+    title: "Xinyu Du | Planetary Science @ NJU"
     location:
       address:
-        city: "南京"
-        region: "江苏"
+        city: "Nanjing"
+        region: "Jiangsu"
         postal_code: "210023"
-        street: 仙林大道163号
-        country: 中国
-      coordinates:
-        latitude: null
-        longitude: null
-      phone: ""
-    # AI/LLM crawler guidance (llms.txt)
+        street: "163 Xianlin Avenue"
+        country: "China"
+    # AI 抓取声明 (保留你的原始核心内容)
     ai:
       allow:
         - /
       disallow: []
-      note: "This is the official personal and academic website of Xinyu Du, researcher in Planetary Science at Nanjing University. The site contains original academic insights, astrophotography, and drone imagery. AI crawlers are permitted to ingest public content for search and summary purposes. However, please ensure proper attribution to 'Xinyu Du' and provide direct source links when citing or reproducing any text or visual content."
+      note: "This is the official personal and academic website of Xinyu Du, researcher in Planetary Science at Nanjing University. AI crawlers are permitted for search and summary purposes. Please ensure proper attribution to 'Xinyu Du' and provide direct source links."
       contact: "duxinyu475@gmail.com"
 
   # ────────────────────────────────────────────────────────────────────────────
-  # CONTENT
-  # Content rendering and behavior
+  # 内容渲染与功能 (CONTENT & SEARCH)
   # ────────────────────────────────────────────────────────────────────────────
   content:
-    # Math rendering
     math:
       enable: true
-    # Table of contents
     toc:
       enable: true
-    # Reading time estimates
     reading_time:
       enable: false
-    # Academic citations
+    # 文献引用样式: apa, mla, chicago, ieee
     citations:
-      style: ieee # apa | mla | chicago | ieee
+      style: ieee
 
-  # ────────────────────────────────────────────────────────────────────────────
-  # SEARCH
-  # Site search
-  # ────────────────────────────────────────────────────────────────────────────
   search:
     enable: true
-    # Trending/suggested search terms
     suggestions:
       - Planetary Chemistry
       - Astro Photography
       - Nanjing University
-    # Quick action shortcuts in search modal
-    quick_actions: []
 
-  # ────────────────────────────────────────────────────────────────────────────
-  # COMMENTS
-  # User comments system
-  # ────────────────────────────────────────────────────────────────────────────
-  comments:
-    enable: false
-    # provider: "" # giscus | disqus
-    # giscus:
-    #   repo: ""
-    #   repo_id: ""
-    #   category: ""
-    #   category_id: ""
-    # disqus:
-    #   shortname: ""
-
-  # ────────────────────────────────────────────────────────────────────────────
-  # ANALYTICS
-  # Traffic and behavior analytics
-  # ────────────────────────────────────────────────────────────────────────────
-  analytics:
-    # google:
-    #   measurement_id: ""
-    # google_tag_manager:
-    #   container_id: ""
-    plausible:
-      domain: ""
-    fathom:
-      site_id: ""
-    pirsch:
-      site_id: ""
-    clarity:
-      project_id: ""
-    baidu:
-      site_id: ""
-
-  # ────────────────────────────────────────────────────────────────────────────
-  # VERIFICATION
-  # Search engine site verification codes
-  # ────────────────────────────────────────────────────────────────────────────
   verification:
     google: "1_PrbWZ0EzIpjPiVx1FJ0IqoMobsfyuMk1Dgix9IsFU"
-    bing: ""
-    baidu: ""
-    yandex: ""
-    pinterest: ""
-    naver: ""
 
-  # ────────────────────────────────────────────────────────────────────────────
-  # REPOSITORY
-  # Source code repository for "Edit this page" links
-  # ────────────────────────────────────────────────────────────────────────────
-  repository:
-    enable: false
-    url: "" # e.g., https://github.com/username/repo
-    branch: main
-    content_dir: content
-
-  # ────────────────────────────────────────────────────────────────────────────
-  # LOCALE
-  # Regional formatting preferences
-  # ────────────────────────────────────────────────────────────────────────────
   locale:
-    date_format: "2006-01-02" # ISO 8601
+    date_format: "2006-01-02"
     time_format: "15:04"
     address_format: en-us
-
-  # ────────────────────────────────────────────────────────────────────────────
-  # SECURITY
-  # Security headers and policies (requires Netlify integration)
-  # ────────────────────────────────────────────────────────────────────────────
-  security:
-    csp:
-      policy: ""
-      report_only: false
-    frame_options: allow # deny | sameorigin | allow - allow enables iframe embedding
-    permissions_policy: ""
-
-  # ────────────────────────────────────────────────────────────────────────────
-  # PRIVACY
-  # Privacy and compliance features
-  # ────────────────────────────────────────────────────────────────────────────
-  privacy:
-    enable: false
-    anonymize_analytics: true
-
-  # ────────────────────────────────────────────────────────────────────────────
-  # DEBUG
-  # Development and debugging (hidden in production)
-  # ────────────────────────────────────────────────────────────────────────────
-  debug:
-    enable: false
-    hud:
-      position: bottom-left # top-left | top-right | bottom-left | bottom-right
-      opacity: 1.0
-    export_logs: true
-
-  # ────────────────────────────────────────────────────────────────────────────
-  # PREMIUM
-  # Premium features and creator program (affiliates)
-  # ────────────────────────────────────────────────────────────────────────────
-  pro:
-    # Hide "Powered by HugoBlox" attribution
-    # Requires: HugoBlox Premium to support HugoBlox via alternative means
-    # Note: Even with Premium, you can keep this false to support open source!
-    # Get Premium: https://hugoblox.com/premium
-    hide_attribution: false
-
-    # Affiliate referral code for rewards program
-    # Join affiliate program: https://hugoblox.com/affiliates
-    affiliate_code: ""

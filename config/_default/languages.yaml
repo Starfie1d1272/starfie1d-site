@@ -1,26 +1,24 @@
-# Languages
-#   Create a section for each of your site's languages.
-#   Documentation: https://docs.hugoblox.com/reference/language/
+# 网站语言配置
+# 文档详见: https://docs.ownable.dev/hugoblox/guides/language/#setting-the-language
 
-# Default language
-#en:
-#  languageCode: en-us
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
+# 默认语言：英文 (主)
+en:
+  languageCode: en-us
+  title: "Xinyu Du | Planetary Science"
+  # 开启多语言模式后，英文内容将存放于 content/en/ 目录下
+  contentDir: content/en
 
-# Uncomment the lines below to configure your website in a second language.
-#zh:
-#  languageCode: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
-# Languages
+# 第二语言：简体中文 (辅)
 zh-Hans:
   languageCode: zh-Hans
-  title: "杜鑫宇 | Xinyu Du"
+  title: "杜鑫宇 | 行星科学"
+  contentDir: content/zh
+  params:
+    identity:
+      name: "杜鑫宇"
+      tagline: "南京大学行星科学 | 行星化学与天体生物学"
+      description: "杜鑫宇 (Xinyu Du) 的个人学术主页。南京大学行星科学专业，研究兴趣涵盖行星化学、天体生物学、地球化学等领域。"
+    footer:
+      text: "南京大学 地球科学与工程学院"
+    copyright:
+      notice: "© {year} {name}. 基于 Hugo Blox 构建"

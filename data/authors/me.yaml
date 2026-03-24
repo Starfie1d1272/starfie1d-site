@@ -2,91 +2,78 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: 杜鑫宇
+  display: Xinyu Du
   given: Xinyu
   family: Du
-  alternate: ""
-  pronunciation: ""
-  pronouns: ""
 status:
   icon: "🌌"
-role: 行星化学在读本科生
+role: Undergraduate Researcher in Planetary Chemistry
 bio: |
-  我是南京大学行星科学（化学）专业的在读本科生。我的研究兴趣横跨**行星化学、天体生物学、地球化学与天文观测**。
+  I am an undergraduate student majoring in Planetary Science (Chemistry) at Nanjing University. My research interests span **Planetary Chemistry, Astrobiology, Geochemistry, and Astronomical Observation**.
 
-  我熟练使用 Python (ObsPy/Jupyter)、C/C++ 进行数据计算，并掌握 GC-MS、LA-ICP-MS 等高精度地球化学仪器的实操。
+  I am proficient in Python (ObsPy/Jupyter) and C/C++ for data computation, and I have hands-on experience with high-precision geochemical instruments such as GC-MS and LA-ICP-MS.
 
 affiliations:
-  - name: 南京大学
+  - name: Nanjing University
     url: https://www.nju.edu.cn/
 
 links:
-  # 1. 直接写 envelope 就能用（系统内置默认支持）
   - icon: envelope
     url: mailto:231830104@smail.nju.edu.cn
     label: E-mail
-
-  # 2. ORCID 现在已经被收录进了 brands 品牌库
   - icon: brands/orcid
     url: https://orcid.org/0009-0001-9137-4942
     label: ORCID
-
-  # 3. ResearchGate 同样也可以用 brands 调出
   - icon: custom/researchgate
     url: https://www.researchgate.net/profile/Xinyu-Du-34
     label: ResearchGate
-
-  # 4. 代码与开源贡献 (brands代表各大品牌的图标库)
   - icon: brands/github
     url: https://github.com/Starfie1d1272
     label: GitHub
-
-  # 5. 领英职业社交
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/xinyu-du-nju/
     label: LinkedIn
 
 interests:
-  - 行星化学与天体生物学
-  - 固体地球化学与同位素定年
-  - 早期类地行星演化
-  - 星野天文摄影
+  - Planetary Chemistry & Astrobiology
+  - Solid Earth Geochemistry & Isotope Dating
+  - Early Terrestrial Planetary Evolution
+  - Astrophotography
 
 education:
-  - degree: 行星科学（化学）学士
-    institution: 南京大学
+  - degree: B.Sc. in Planetary Science (Chemistry)
+    institution: Nanjing University
     start: 2023-09-01
     end: 2027-06-30
-  - degree: 天体生物学 (访问学生)
-    institution: 中国科学技术大学
+  - degree: Visiting Student in Astrobiology
+    institution: University of Science and Technology of China (USTC)
     start: 2025-11-01
     end: 2026-03-31
 
-# 你硬核的科研经历（直接显示在经验时间轴上）
 experience:
-  - role: 访问学生 | 导师：郝记华教授
-    org: 中国科学技术大学 · 天体生物学实验室
+  - role: "Visiting Student | Advisor: Prof. Jihua Hao" # 👈 加双引号
+    org: "Astrobiology Lab, USTC" # 👈 加双引号（带标点建议都加）
     start: 2025-11-01
     end: 2026-03-31
     summary: |
-      - **动力学实验搭建**: 搭建常温液相反应系统实现高精度时间梯度采样。
-      - **仪器操作与图谱**: 操作 GC-MS 并掌握其分离检测原理，负责实验测试数据汇总。
-  - role: 项目成员 | 导师：陈天宇教授
-    org: 南京大学 · 地球科学与工程学院
+      - **Experimental Setup**: Built a liquid-phase reaction system for high-precision time-gradient sampling.
+      - **Instrumentation**: Operated GC-MS and summarized experimental test data.
+  - role: "Project Member | Advisor: Prof. Tianyu Chen" # 👈 加双引号
+    org: "School of Earth Sciences and Engineering, Nanjing University"
     start: 2024-09-01
     end: 2025-12-31
     summary: |
-      - **野外采样与前处理**: 剑川盆地野外勘察，完成固体地球化学全套制样流程。
-      - **微区分析与同位素测试**: 使用 LA-ICP-MS 进行靶样元素面扫。
-  - role: 轮转学习 | 导师：刘慧根副教授
-    org: 南京大学 · 天文与空间科学学院
+      - **Fieldwork & Pre-processing**: Conducted geological surveys in Jianchuan Basin and completed full geochemical sample preparation.
+      - **Microanalysis**: Used LA-ICP-MS for elemental mapping.
+  - role: "Research Rotation | Advisor: Associate Prof. Huigen Liu" # 👈 加双引号
+    org: "School of Astronomy and Space Science, Nanjing University"
     start: 2024-10-01
     end: 2025-11-30
     summary: |
-      - **实地观测**: 参与新型日间观星探测器 (VPS) 实测验证项目与外场光学测试。
+      - **Observation**: Participated in the field testing and validation of the Visual Planet Searcher (VPS) project.
 
 skills:
-  - name: 核心科研技能
+  - name: Research Skills
     items:
       - label: Python (ObsPy/Jupyter)
         level: 4
@@ -94,35 +81,17 @@ skills:
         level: 3
       - label: LaTeX & Markdown
         level: 4
-  - name: 仪器操作与勘测
+  - name: Instrumentation & Surveying
     items:
       - label: LA-ICP-MS & GC-MS
         level: 3
-      - label: 无人机航拍与野外勘测
+      - label: UAV Photography & Field Survey
         level: 5
 
-# 语言能力
-# languages:
-#   - name: 中文
-#     level: 5
-#     label: Native (母语)
-#   - name: English
-#     level: 3
-#     label: CET-4 / CET-6 (熟练阅读英文文献)
-
-# languages:
-#   - name: English
-#     level: 5
-#     label: Native
-#   - name: Spanish
-#     level: 4
-#     label: Fluent
-
-# 荣誉奖项
 awards:
-  - title: 优秀摄影师 (摄影作品登载南大官网头图)
-    awarder: 南京大学校新闻中心
+  - title: Outstanding Photographer (Main Page Feature)
+    awarder: NJU News Center
     date: "2025-09-27"
-    summary: 擅长科学可视化与星野天文摄影，个人作品曾被选作南京大学官方网站主页头图。
-    icon: hero/camera # 换成相机图标更贴切
+    summary: Specialized in scientific visualization and astrophotography; works featured on the NJU official website.
+    icon: hero/camera
     url: "#photography"

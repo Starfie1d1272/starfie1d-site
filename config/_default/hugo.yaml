@@ -1,105 +1,89 @@
 # yaml-language-server: $schema=http://json-schema.org/draft-07/schema#
-# Configuration of Hugo
-# Guide: https://docs.hugoblox.com/tutorial/
-# Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+# ══════════════════════════════════════════════════════════════════════════════
+# HUGO 站点总配置
+# ══════════════════════════════════════════════════════════════════════════════
 
-# Website name (set in params.yaml under hugoblox.branding.name)
-title: "杜鑫宇 | Xinyu Du"
-# Website URL
+# 网站默认标题 (会被 languages.yaml 中的配置覆盖)
+title: "Xinyu Du | Starfie1d"
+# 网站部署地址
 baseURL: "https://starfie1d.top/"
 
-############################
-## 1. 语言与 CJK 深度优化
-############################
+# ────────────────────────────────────────────────────────────────────────────
+# 1. 多语言与中文字符优化 (Multilingual & CJK)
+# ────────────────────────────────────────────────────────────────────────────
 
-defaultContentLanguage: zh-Hans
-hasCJKLanguage: true # 开启中日韩语支持
-summaryLength: 70 # 中文摘要建议从 30 增加到 70（中文分词比英文短）
-removePathAccents: true # 移除路径中的重音符号
+# 【重要修改】默认语言改为英文 (配合 Phase 1)
+defaultContentLanguage: en
+# 开启中日韩语支持 (确保中文分词和搜索正常)
+hasCJKLanguage: true
+# 摘要长度 (针对中文环境设为 70)
+summaryLength: 70
+# 默认语言是否显示在子目录 (false 表示英文在 /，中文在 /zh/)
 defaultContentLanguageInSubdir: false
+# 移除路径中的重音符号
+removePathAccents: true
 
-############################
-## 2. 图像处理 (针对 2.5s LCP 的降维打击)
-############################
+# ────────────────────────────────────────────────────────────────────────────
+# 2. 图像处理优化 (Imaging & Performance)
+# ────────────────────────────────────────────────────────────────────────────
 imaging:
   resampleFilter: "Lanczos"
   quality: 85
   anchor: "Smart"
-  hint: picture
-  format: webp # 🔥 核心：强制所有处理后的图片输出为 WebP 格式
+  # 强制所有处理后的图片输出为 WebP 格式，极大提升加载速度
+  format: webp
   exif:
-    disable: true # 移除图片位置/拍摄器材信息（保护隐私并减小体积）
+    disable: true # 移除拍摄器材/位置等隐私信息
 
-############################
-## 3. 构建与性能优化 (Minify)
-############################
-minify:
-  disableXML: false
-  minifyOutput: true # 强制开启 HTML 压缩
-
-build:
-  writeStats: true
-
-enableGitInfo: false
-enableEmoji: true
-enableRobotsTXT: true
-footnotereturnlinkcontents: <sup>^</sup>
-ignoreFiles: [".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
-disableAliases: true
-outputs:
-  home: [HTML, RSS, headers, redirects, backlinks]
-  section: [HTML, RSS]
-
-# 禁用冗余元数据
-disableHugoGeneratorInject: true # 移除 HTML 源代码里的 "Hugo 0.158" 标记
-
-############################
-## 4. 渲染与安全 (Markup)
-############################
+# ────────────────────────────────────────────────────────────────────────────
+# 3. 渲染与代码高亮 (Markup & Highlighting)
+# ────────────────────────────────────────────────────────────────────────────
 markup:
   _merge: deep
   goldmark:
     renderer:
-      unsafe: true # 允许在 Markdown 里写 HTML（方便以后做复杂的行星化学图表）
-    parser:
-      attribute:
-        block: true
-        title: true
+      # 允许在 Markdown 中使用 HTML (方便插入行星科学图表或自定义组件)
+      unsafe: true
   highlight:
     lineNos: false
-    style: dracula # 代码高亮主题，极客风
+    # 代码高亮风格: dracula
+    style: dracula
 
-############################
-## 5. 高级路径与分类
-############################
+# ────────────────────────────────────────────────────────────────────────────
+# 4. 构建优化 (Minify & Build)
+# ────────────────────────────────────────────────────────────────────────────
+minify:
+  disableXML: false
+  # 开启 HTML/CSS/JS 压缩，减小网页体积
+  minifyOutput: true
+
+build:
+  writeStats: true
+
+# ────────────────────────────────────────────────────────────────────────────
+# 5. 系统路径与分类 (Taxonomies)
+# ────────────────────────────────────────────────────────────────────────────
 taxonomies:
   author: authors
   tag: tags
   publication_type: publication_types
 
-# 针对 slides 和项目的特殊输出设置
+# 针对幻灯片 (Slides) 的特殊输出配置
 cascade:
   - _target:
       path: /slides/**
       kind: page
     outputs: [HTML, present]
 
-############################
-## 6. 其他设置
-############################
-timeout: "600s"
-security:
-  _merge: deep
-sitemap:
-  changefreq: weekly
-  priority: 0.5
-  filename: sitemap.xml
-  _merge: deep
+# ────────────────────────────────────────────────────────────────────────────
+# 6. 其他基础设置
+# ────────────────────────────────────────────────────────────────────────────
+timeout: "600s" # 构建超时限制 (适用于多图站点)
+enableEmoji: true
+enableRobotsTXT: true
+disableHugoGeneratorInject: true # 移除源代码中的 Hugo 版本标记
+disableAliases: true
 
-# 如果不需要标签/分类页，可以减重：taxonomy 和 taxonomyTerm 会被禁用
-# disableKinds: ["taxonomy", "taxonomyTerm"]
-
-# 分页预设
-pagination:
-  pagerSize: 10
+# 首页输出格式
+outputs:
+  home: [HTML, RSS, headers, redirects, backlinks]
