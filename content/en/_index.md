@@ -65,7 +65,7 @@ sections:
   - block: collection
     id: photography # Matches #photography (Awards & Gallery) in menus.yaml
     content:
-      title: Awards & Gallery # 👈 按照你的要求改为 Awards & Gallery
+      title: Gallery # 👈 按照你的要求改为 Awards & Gallery
       subtitle: 'Exploring the rigor of planetary science and the beauty of the cosmos'
       filters:
         folders:
