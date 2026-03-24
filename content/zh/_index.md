@@ -14,7 +14,7 @@ sections:
   - block: resume-biography-3
     id: about  # 对应导航栏的 #about
     content:
-      username: me # 对应 content/authors/ 下的文件夹名
+      username: me_zh # 对应 content/authors/ 下的文件夹名
       text: ''
       # 简历下载按钮
       button:
@@ -41,7 +41,7 @@ sections:
     id: experience  # 对应导航栏的 #experience
     content:
       title: 科研经历
-      username: me
+      username: me_zh
     design:
       date_format: '2006年01月'
       is_education_first: false
@@ -51,7 +51,7 @@ sections:
     id: skills  # 对应导航栏的 #skills
     content:
       title: 技能栈 & 核心工具
-      username: me
+      username: me_zh
     design:
       columns: '2'
 
@@ -60,7 +60,7 @@ sections:
     id: awards
     content:
       title: 荣誉奖项
-      username: me
+      username: me_zh
     design:
       columns: '2'
 

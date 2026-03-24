@@ -1,10 +1,5 @@
----
-# 告诉 Hugo 这是一个基于最新 V2 架构的作者档案
 schema: hugoblox/author/v1
-
-# 【关键修复】加上原生的 title，防止 Hugo 底层把文件夹名 "me" 当作标题！
-title: 杜鑫宇
-slug: me
+slug: me_zh
 is_owner: true
 
 name:
@@ -103,4 +98,3 @@ awards:
     summary: 擅长科学可视化与星野天文摄影，个人作品曾被选作南京大学官方网站主页头图。
     icon: hero/camera
     url: "#photography"
----

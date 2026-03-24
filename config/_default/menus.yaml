@@ -5,13 +5,13 @@
 
 main:
   - name: About
-    url: "#about" # Corresponds to the top intro block
+    url: "/#about" # Corresponds to the top intro block
     weight: 10
   - name: Experience
-    url: "#experience" # Corresponds to the research timeline
+    url: "/#experience" # Corresponds to the research timeline
     weight: 20
   - name: Skills
-    url: "#skills" # Corresponds to your Python/Instrument skills bar
+    url: "/#skills" # Corresponds to your Python/Instrument skills bar
     weight: 30
   - name: Awards & Gallery
     url: "#photography" # Points to the id: photography defined in _index.md
