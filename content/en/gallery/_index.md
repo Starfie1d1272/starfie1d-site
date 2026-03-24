@@ -1,5 +1,5 @@
 ---
-title: "Awards & Gallery" # 与菜单保持一致
+title: "Gallery" # 与菜单保持一致
 summary: "Bridging the rigor of planetary science and the romance of the cosmos"
 
 # Cascade: Automatically applies to all sub-pages in this folder
