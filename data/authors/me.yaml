@@ -1,7 +1,10 @@
----
-title: Xinyu Du
+schema: hugoblox/author/v1
 slug: me
 is_owner: true
+name:
+  display: Xinyu Du
+  given: Xinyu
+  family: Du
 status:
   icon: "🌌"
 role: Undergraduate Researcher in Planetary Chemistry
@@ -48,21 +51,21 @@ education:
     end: 2026-03-31
 
 experience:
-  - role: "Visiting Student | Advisor: Prof. Jihua Hao"
-    org: "Astrobiology Lab, USTC"
+  - role: "Visiting Student | Advisor: Prof. Jihua Hao" # 👈 加双引号
+    org: "Astrobiology Lab, USTC" # 👈 加双引号（带标点建议都加）
     start: 2025-11-01
     end: 2026-03-31
     summary: |
       - **Experimental Setup**: Built a liquid-phase reaction system for high-precision time-gradient sampling.
       - **Instrumentation**: Operated GC-MS and summarized experimental test data.
-  - role: "Project Member | Advisor: Prof. Tianyu Chen"
+  - role: "Project Member | Advisor: Prof. Tianyu Chen" # 👈 加双引号
     org: "School of Earth Sciences and Engineering, Nanjing University"
     start: 2024-09-01
     end: 2025-12-31
     summary: |
       - **Fieldwork & Pre-processing**: Conducted geological surveys in Jianchuan Basin and completed full geochemical sample preparation.
       - **Microanalysis**: Used LA-ICP-MS for elemental mapping.
-  - role: "Research Rotation | Advisor: Associate Prof. Huigen Liu"
+  - role: "Research Rotation | Advisor: Associate Prof. Huigen Liu" # 👈 加双引号
     org: "School of Astronomy and Space Science, Nanjing University"
     start: 2024-10-01
     end: 2025-11-30
@@ -92,8 +95,3 @@ awards:
     summary: Specialized in scientific visualization and astrophotography; works featured on the NJU official website.
     icon: hero/camera
     url: "#photography"
-
-build:
-  render: never
-  list: always
----
