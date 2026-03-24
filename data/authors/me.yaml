@@ -21,18 +21,18 @@ affiliations:
     url: https://www.nju.edu.cn/
 
 links:
-  # 1. 最重要的联系方式 (fas代表FontAwesome实心图标)
-  - icon: fas/envelope
+  # 1. 直接写 envelope 就能用（系统内置默认支持）
+  - icon: envelope
     url: mailto:231830104@smail.nju.edu.cn
     label: E-mail
 
-  # 2. 学术身份标识 (ai代表Academicons学术专属图标库)
-  - icon: ai/orcid
+  # 2. ORCID 现在已经被收录进了 brands 品牌库
+  - icon: brands/orcid
     url: https://orcid.org/0009-0001-9137-4942
     label: ORCID
 
-  # 3. ResearchGate
-  - icon: ai/researchgate
+  # 3. ResearchGate 同样也可以用 brands 调出
+  - icon: brands/researchgate
     url: https://www.researchgate.net/profile/Xinyu-Du-34
     label: ResearchGate
 
