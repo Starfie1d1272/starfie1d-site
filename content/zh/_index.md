@@ -19,7 +19,7 @@ sections:
       # 简历下载按钮
       button:
         text: 📄 下载完整简历 (PDF)
-        url: uploads/Public_CV.pdf
+        url: /uploads/Public_CV.pdf
       headings:
         about: '关于我'
         education: '教育背景'
