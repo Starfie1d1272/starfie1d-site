@@ -21,35 +21,31 @@ affiliations:
     url: https://www.nju.edu.cn/
 
 links:
-  # 1. 最重要的联系方式
-  - icon: envelope
-    icon_pack: fas
+  # 1. 最重要的联系方式 (fas代表FontAwesome实心图标)
+  - icon: fas/envelope
     url: mailto:231830104@smail.nju.edu.cn
     label: E-mail
 
-  # 2. 学术身份标识
-  - icon: orcid
-    icon_pack: ai # 学术图标库
+  # 2. 学术身份标识 (ai代表Academicons学术专属图标库)
+  - icon: ai/orcid
     url: https://orcid.org/0009-0001-9137-4942
     label: ORCID
 
-  # 3. ResearchGate (展示项目与经历)
-  - icon: researchgate
-    icon_pack: ai # 【重点修改】ResearchGate属于 ai (Academicons) 库
+  # 3. ResearchGate
+  - icon: ai/researchgate
     url: https://www.researchgate.net/profile/Xinyu-Du-34
-    label: ResearchGate # 【修改】首字母大写保持美观
+    label: ResearchGate
 
-  # 4. 代码与开源贡献
-  - icon: github
-    icon_pack: fab
+  # 4. 代码与开源贡献 (brands代表各大品牌的图标库)
+  - icon: brands/github
     url: https://github.com/Starfie1d1272
     label: GitHub
 
   # 5. 领英职业社交
-  - icon: linkedin
-    icon_pack: fab
+  - icon: brands/linkedin
     url: https://www.linkedin.com/in/xinyu-du-nju/
     label: LinkedIn
+
 interests:
   - 行星化学与天体生物学
   - 固体地球化学与同位素定年
