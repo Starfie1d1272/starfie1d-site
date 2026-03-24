@@ -32,7 +32,7 @@ links:
     label: ORCID
 
   # 3. ResearchGate 同样也可以用 brands 调出
-  - icon: brands/researchgate
+  - icon: custom/researchgate
     url: https://www.researchgate.net/profile/Xinyu-Du-34
     label: ResearchGate
 
