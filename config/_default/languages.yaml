@@ -4,15 +4,16 @@
 # 默认语言：英文 (主)
 en:
   languageCode: en-us
-  title: "Xinyu Du | Planetary Science"
-  # 开启多语言模式后，英文内容将存放于 content/en/ 目录下
+  languageName: English # 👈 添加这一行
   contentDir: content/en
+  title: "Xinyu Du"
 
 # 第二语言：简体中文 (辅)
 zh-Hans:
   languageCode: zh-Hans
-  title: "杜鑫宇 | 行星科学"
+  languageName: 简体中文 # 👈 添加这一行
   contentDir: content/zh
+  title: "杜鑫宇"
   params:
     identity:
       name: "杜鑫宇"
